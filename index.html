@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE6</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: gainsboro;
+        }
+        .navbar{
+            background-color: rgba(0, 128, 0, 0.177);
+        }
+        .navbar img{
+            position: relative;
+            left: 100px;
+        }
+        .navbar .links a{
+            text-decoration: none;
+            color: rgb(6, 90, 6);
+            padding: 20px;
+            font-weight: bold;
+            font-size: large;
+            transition: 0.2s;
+        }
+        .navbar .links a:hover{
+            color: aliceblue;
+            transform: scale(1.04,1.04);
+        }
+        .navbar .links{
+            position: relative;
+            right: 180px;
+            top: 15px;
+        }
+        .navbar .button{
+            position: relative;
+            right: 70px;
+            top: 15px;
+            
+        }
+        .row{
+            justify-content: space-evenly;
+        }
+        .row .col-3{
+            /* background-color: aqua;  */
+            height: 500px;
+            position: relative;
+            top: 190px;
+        }
+         #divGreen{
+            border-radius: 60px;
+            background-color: rgba(0, 128, 0, 0.082);
+            text-align: center;
+            transition: 0.3s;
+        }
+        #divGreen:hover{
+            transform: translateY(-40px);
+            background-color: rgba(0, 128, 0, 0.400);
+            color: aliceblue;
+            box-shadow: 5px 5px 1px black;
+        }
+        #divBlue{
+            border-radius: 60px;
+            background-color: rgba(0, 11, 128, 0.082);
+            text-align: center;
+            transition: 0.3s;
+        }
+        #divBlue:hover{
+            transform: translateY(-40px);
+            background-color: rgba(0, 34, 128, 0.500);
+            color: aliceblue;
+            box-shadow: 5px 5px 1px black;
+        }
+        #divPink{
+            border-radius: 60px;
+            background-color: rgba(255, 0, 230, 0.082);
+            text-align: center;
+            transition: 0.3s;
+        }
+        #divPink:hover{
+            transform: translateY(-40px);
+            background-color: rgba(255, 0, 230, 0.250);
+            color: aliceblue;
+            box-shadow: 5px 5px 1px black;
+        } 
+        .col-3 img{
+            position: relative;
+            bottom: 200px;
+            right: 25px;
+        }
+        .content{
+            position: relative;
+            bottom: 200px;
+        }
+        .content p{
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .content h5{
+            font-weight: bold;
+        }
+        .blue{
+            color: rgb(6, 6, 153);
+        }
+        .pink{
+            color: rgb(242, 108, 131);
+        }
+        .green{
+            color: green;
+        }
+        .content .btn{
+            color: white;
+            font-weight: bold;
+            background-color: rgb(255, 200, 0);
+            border-radius: 20px;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="Firefly_Logo_RGB.webp" width="130px" alt="" class="tr">
+            <nav class="links">
+                <a href="#">Buy</a>
+                <a href="#">Drink</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Feedback</a>
+            </nav>
+            <nav class="button">
+                <button class="btn btn-outline-success">Sign in</button>
+                <button class="btn btn-success">Log in</button>
+            </nav>
+        </div>
+    </header>
+    <br><br><br>
+    <section>
+        <div class="row">
+            <div class="col-3" id="divGreen">
+                <img src="plastic-juice-green.png" alt="" width="450px">
+                <div class="content">
+                    <h2 class="green">KIWI🥝</h2>
+                    <p class="green">Lorem ipsum dolor sit amet consecteturds adipisicing elit </p>
+                    <h5 class="price"> $12,99</h5>
+                    <br>
+                    <button class="btn">ADD TO CARD</button>
+                </div>
+            </div>
+            <div class="col-3" id="divBlue">
+                <img src="plastic-juice-blue.png" alt="" width="450px">
+                <div class="content">
+                    <h2 class="blue">BLUEBERRY🫐</h2>
+                    <p class="blue">Lorem ipsum dolor sit amet consecteturds adipisicing elit </p>
+                    <h5 class="price"> $12,99</h5>
+                    <br>
+                    <button class="btn">ADD TO CARD</button>
+                </div>
+            </div>
+            <div class="col-3" id="divPink">
+                <img src="plastic-juice-red.png" alt="" width="450px">
+                <div class="content">
+                    <h2 class="pink">STRAWBERRY🍓</h2>
+                    <p class="pink">Lorem ipsum dolor sit amet consecteturds adipisicing elit </p>
+                    <h5 class="price"> $12,99</h5>
+                    <br>
+                    <button class="btn">ADD TO CARD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
